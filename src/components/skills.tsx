@@ -11,12 +11,17 @@ import typescript from "../assets/typescript.png";
 import redux from "../assets/redux.png";
 import express from "../assets/Expressjs.png";
 import python from "../assets/python.jpg";
+import jwt from '../assets/jwt.png'
+import tailwind from '../assets/tailwind.png'
+import arduino from '../assets/arduino.png'
+
 export const Skills = () => {
   return (
     <div className="m-8">
       <h2 className="text-3xl font-bold text-center mb-6">Tecnologias</h2>
       <div className="flex flex-wrap justify-center gap-4">
         <SkillItem img={htmlCss} />
+        <SkillItem img={tailwind} />
         <SkillItem img={javascrip} />
         <SkillItem img={typescript} />
         <SkillItem img={react} />
@@ -24,10 +29,12 @@ export const Skills = () => {
         <SkillItem img={reactNative} />
         <SkillItem img={node} />
         <SkillItem img={express} />
+        <SkillItem img={jwt} />
         <SkillItem img={python} />
         <SkillItem img={git} />
         <SkillItem img={github} />
         <SkillItem img={postgress} />
+        <SkillItem img={arduino} />
       </div>
     </div>
   );

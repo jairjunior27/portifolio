@@ -18,13 +18,13 @@ export const Thema = ({ children }: { children: ReactNode }) => {
     <div className="">
       <Header />
       {isMenuSelected && (
-        <nav className="bg-sky-900 border-y text-white absolute left-0 right-0 z-10">
+        <nav className="bg-neutral-800 border-y text-white absolute left-0 right-0 z-10 p-8">
           <ul className="flex flex-col items-center">
             {menuItems.map((item, index) => (
               <Link
                 to={item.link}
                 key={index}
-                className={`rounded my-3 font-edu ${
+                className={`rounded my-3 font-edu hover:border-2 border-yellow-500 ${
                   selected === index ? "border-b-2  " : ""
                 }`}
                 onClick={() => handleClick(index)}
