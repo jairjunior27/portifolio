@@ -17,12 +17,12 @@ export const HeroPage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex-1 items-center flex bottom-0 max-[820px]:order-2 max-[820px]:flex justify-center max-[820px]:h-[300px] scroll-animation">
+      <div className="flex-1 items-center flex bottom-0 max-[820px]:order-2 max-[820px]:flex justify-center max-[820px]:h-[300px]">
         <img
           src={jrPortifolio}
           alt="Jair Junior"
           title="img-Jair Junior"
-          className="h-full max-[820px]:h-[300px]"
+          className="h-full max-[820px]:h-[350px] "
         />
       </div>
 
@@ -37,7 +37,7 @@ export const HeroPage = () => {
           Bacharel em Ciências da Computação e Desenvolvedor Full Stack
         </p>
         <a
-          href="/exemple.pdf"
+          href="/logo.pdf"
           download
           className="bg-yellow-700 text-neutral-100 rounded w-[200px] py-2 mt-8 bg-gradient-to-r from-yellow-700 to-orange-500 bg-[length:200%_100%] hover:bg-[length:200%_100%] hover:animate-hoverColorChange hover:text-gray-400"
         >

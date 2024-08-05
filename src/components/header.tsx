@@ -11,22 +11,23 @@ export const Header = () => {
   const handleClick = (index: number) => {
     setSelected(index);
   };
+
   return (
-    <div className="flex items-center justify-between p-4 bg-neutral-800">
-      <h1 className="text-yellow-500 text-3xl font-edu ">
+    <div className="flex items-center justify-between p-4 bg-neutral-800 relative z-30">
+      <h1 className="text-yellow-500 text-3xl font-edu">
         Jair
-        <span className="text-white  text-3xl font-edu font-medium">Jr</span>
+        <span className="text-white text-3xl font-edu font-medium">Jr</span>
       </h1>
       <nav className="max-sm:hidden">
-        <ul className="flex text-white font-bold font-poppins font-normal cursor-pointer ">
+        <ul className="flex text-white font-bold font-poppins font-normal cursor-pointer">
           {menuItems.map((item, index) => (
             <Link
               to={item.link}
               key={index}
               onClick={() => handleClick(index)}
               className={`mx-1 px-1 rounded hover:text-yellow-500 ${
-                selected === index ? "border-b-2 border-yellow-500 " : ""
-              } `}
+                selected === index ? "border-b-2 border-yellow-500" : ""
+              }`}
             >
               {item.nome}
             </Link>
@@ -41,7 +42,7 @@ export const Header = () => {
       ) : (
         <div
           onClick={toogle}
-          className="text-yellow-500  text-3xl    font-poppins "
+          className="text-yellow-500 text-3xl sm:block font-poppins"
         >
           X
         </div>
