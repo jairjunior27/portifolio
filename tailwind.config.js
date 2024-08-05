@@ -12,6 +12,31 @@ export default {
         customPolygon:
           "polygon(100% 0, 100% 50%, 100% 100%, 43% 100%, 11% 45%, 45% 0)",
       },
+
+      keyframes: {
+        aniHover: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+        hoverColorChange: {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "0 0" },
+        },
+        scrollIn: {
+          "0%": { opacity: 0, transform: "translateY(50px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+
+      animation: {
+        aniHover: "aniHover 0.5s ease-in-out infinite",
+        hoverColorChange: "hoverColorChange 0.5s ease-in-out forwards",
+        scrollIn: "scrollIn 0.6s ease-out forwards",
+      },
+
+      backgroundSize: {
+        "200%": "200%",
+      },
     },
   },
   plugins: [

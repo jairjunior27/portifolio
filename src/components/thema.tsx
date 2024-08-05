@@ -2,20 +2,18 @@ import { ReactNode, useContext } from "react";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { ContextMenu } from "../context/Context";
-import { MenuItems } from "../helps/menuItem";
+import { MenuItems } from "../dados/menuData";
 import { Link } from "react-router-dom";
 
 export const Thema = ({ children }: { children: ReactNode }) => {
-  const { isMenuSelected, selected,setSelected } = useContext(ContextMenu);
+  const { isMenuSelected, selected, setSelected } = useContext(ContextMenu);
   const menuItems = MenuItems;
 
-
-
-  const handleClick =(index: number) =>{
-      setSelected(index)
-  }
+  const handleClick = (index: number) => {
+    setSelected(index);
+  };
   return (
-    <div className="">
+    <div className="flex flex-col h-screen">
       <Header />
       {isMenuSelected && (
         <nav className="bg-neutral-800 border-y text-white absolute left-0 right-0 z-10 p-8">
@@ -36,7 +34,7 @@ export const Thema = ({ children }: { children: ReactNode }) => {
         </nav>
       )}
 
-      <div className="h-full"> {children}</div>
+      <div className="flex-1"> {children}</div>
       <Footer />
     </div>
   );

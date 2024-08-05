@@ -10,7 +10,6 @@ export const Home = () => {
      <Skills/>
      <Projetos/>
      <Abount/>
-      <div className="my-4 ">...</div>
     </Thema>
   );
 };
