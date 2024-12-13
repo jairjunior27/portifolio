@@ -1,9 +1,11 @@
 import projeto1 from "../assets/imagem-projeto-01.jpg";
+import lojaJota from "../assets/loja-jota.png";
 import react from "../assets/React_(web_framework)-Logo.wine (1).svg";
 import typescript from "../assets/typescript.png";
 import redux from "../assets/redux.png";
 import axios from "../assets/axios.png";
-
+import next from "../assets/next-js.png";
+import tailwind from "../assets/tailwind.jpg";
 export type ProjetoType = {
   title: string;
   img: string;
@@ -19,9 +21,9 @@ export const projectData: ProjetoType[] = [
     linguagem: [react, typescript, redux, axios],
   },
   {
-    title: "Projeto2",
-    img: projeto1,
-    link: "https://sistemaalternativo.vercel.app/",
-    linguagem: [react],
+    title: "Loja-Jota em Construção...",
+    img: lojaJota,
+    link: "https://lojajota.vercel.app/",
+    linguagem: [next, tailwind],
   },
 ];

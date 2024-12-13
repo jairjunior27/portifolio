@@ -37,7 +37,7 @@ export const HeroPage = () => {
           Bacharel em Ciências da Computação e Desenvolvedor Full Stack
         </p>
         <a
-          href="/logo.pdf"
+          href="/natal.pdf"
           download
           className="bg-yellow-700 text-neutral-100 rounded w-[200px] py-2 mt-8 bg-gradient-to-r from-yellow-700 to-orange-500 bg-[length:200%_100%] hover:bg-[length:200%_100%] hover:animate-hoverColorChange hover:text-gray-400"
         >

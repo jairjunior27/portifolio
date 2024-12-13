@@ -10,19 +10,36 @@ import typescript from "../assets/typescript.png";
 import redux from "../assets/redux.png";
 import express from "../assets/Expressjs.png";
 import python from "../assets/python.jpg";
-import jwt from '../assets/jwt.png'
-import tailwind from '../assets/tailwind.png'
-import arduino from '../assets/arduino.png'
-import axios from '../assets/axios.png'
+import jwt from "../assets/jwt.png";
+import tailwind from "../assets/tailwind.png";
+import arduino from "../assets/arduino.png";
+import axios from "../assets/axios.png";
+import next from "../assets/next-js.png";
 
+export type skilType = {
+  skils: string[];
+};
 
-
-export type skilType ={
-    skils: string[]
-
-}
-
-
-export const SkilsData:skilType[] = [
-  {skils: [htmlCss,tailwind,javascrip,typescript,react,redux,axios,git,github,node,express,jwt,reactNative,postgress,arduino,python]}
-]
+export const SkilsData: skilType[] = [
+  {
+    skils: [
+      htmlCss,
+      tailwind,
+      javascrip,
+      typescript,
+      react,
+      redux,
+      axios,
+      git,
+      github,
+      node,
+      express,
+      jwt,
+      reactNative,
+      postgress,
+      arduino,
+      python,
+      next,
+    ],
+  },
+];
