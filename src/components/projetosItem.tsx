@@ -9,7 +9,8 @@ type prop = {
 };
 export const ProjectItem = ({ title, img, link, linguagem }: prop) => {
   return (
-    <div className=" w-[300px] flex flex-col  items-center border-2 rounded">
+    <Link to={link}>
+    <div className=" w-[300px] h-[600px] flex flex-col  items-center border-2 rounded">
       <h2 className="text-2xl font-edu text-center mb-3 bg-blue-700 w-full p-2 text-white font-bold rounded">
         {title}
       </h2>
@@ -20,13 +21,13 @@ export const ProjectItem = ({ title, img, link, linguagem }: prop) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex">
+      <div className="grid grid-cols-3">
         {linguagem.map((img, index) => (
-          <div className="w-full " key={index}>
+          <div className="w-[70px] h-[80px] mx-2" key={index}>
             <img
               src={img}
               alt="img-linguagem"
-              className="w-[80px] h-[80px] object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
         ))}
@@ -35,5 +36,6 @@ export const ProjectItem = ({ title, img, link, linguagem }: prop) => {
         <FaLink />
       </Link>
     </div>
+    </Link>
   );
 };

@@ -6,6 +6,9 @@ import redux from "../assets/redux.png";
 import axios from "../assets/axios.png";
 import next from "../assets/next-js.png";
 import tailwind from "../assets/tailwind.jpg";
+import node from '../assets/node-js-2.png'
+import express from '../assets/Expressjs.png'
+import jwt from '../assets/jwt.png'
 export type ProjetoType = {
   title: string;
   img: string;
@@ -24,6 +27,6 @@ export const projectData: ProjetoType[] = [
     title: "Loja-Jota em Construção...",
     img: lojaJota,
     link: "https://lojajota.vercel.app/",
-    linguagem: [next, tailwind],
+    linguagem: [next, tailwind,typescript,axios,node,express,jwt],
   },
 ];

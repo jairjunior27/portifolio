@@ -13,7 +13,7 @@ export const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-between p-4 bg-neutral-800 relative z-30">
+    <div className="flex items-center justify-between p-8 bg-neutral-800 relative z-30">
       <h1 className="text-yellow-500 text-3xl font-edu">
         Jair
         <span className="text-white text-3xl font-edu font-medium">Jr</span>
